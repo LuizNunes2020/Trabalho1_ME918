@@ -1,0 +1,15 @@
+tabela: mtcars.csv
+
+# modelo: (reg_linear | reg_logistica)
+modelo: reg_logistica
+
+# reutilizar_modelo: (sim | nao | não) Deve ajustar novamente o modelo ou pegar 
+# da pasta /saidas.
+reutilizar_modelo: nao
+
+# modelo utilizado para fazer predicao
+escolhe_modelo: fit1
+
+pares:
+  - "y": am
+    "x": [wt, cyl]
